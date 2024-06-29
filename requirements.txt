@@ -1,0 +1,8 @@
+langchain_community
+unstructured
+psutil
+langchain_qdrant
+sentence_transformers
+qdrant-client
+flask
+flask-restful
