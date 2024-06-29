@@ -3,8 +3,7 @@
 Semantic Search is a web application designed to help you find the information you need quickly and efficiently using advanced search algorithms. This project utilizes Flask for the web framework, LangChain for text processing, HuggingFace for embeddings, and Qdrant for the vector database.
 
 
-https://github.com/harshk04/Semantic-Search-Flask/assets/115946158/d4fe25ac-685c-4721-817a-4e2c3c18ad6a
-
+https://github.com/harshk04/Semantic-Search-Flask/assets/115946158/e087cc3a-8497-4ffd-81ef-24cf162b8626
 
 
 ## Features
