@@ -72,14 +72,20 @@ Follow these instructions to set up and run the project on your local machine.
 
 ### Project Structure
 semantic-search/
-│
+
+
 ├── templates/
-│ └── form.html     # HTML template for the web application
-│
+
+  └── form.html     # HTML template for the web application
+
 ├── embed-data.py    # Script to load and embed data
+
 ├── app.py           # Flask application
+
 ├── requirements.txt # Python dependencies
+
 └── README.md         # Project documentation
+
 
 ### Contributing
 
