@@ -1,8 +1,9 @@
-langchain_community
-unstructured
-psutil
-langchain_qdrant
-sentence_transformers
-qdrant-client
-flask
-flask-restful
+unstructured==0.14.9
+psutil==6.0.0
+sentence_transformers==3.0.1
+Flask-RESTful==0.3.10
+flask==3.0.3
+langchain-qdrant==0.1.1
+langchain-community==0.2.6
+qdrant-client==1.9.2
+nltk==3.8.1
