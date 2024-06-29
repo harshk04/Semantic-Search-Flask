@@ -6,7 +6,7 @@ import ollama
 
 app = Flask(__name__)
 
-# Initialize the embeddings model and Qdrant clients (unchanged)
+# Initialize the embeddings model and Qdrant sclients (unchanged)
 model_name = "BAAI/bge-large-en"
 model_kwargs = {'device': 'cpu'}
 encode_kwargs = {'normalize_embeddings': False}
