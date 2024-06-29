@@ -161,6 +161,59 @@
       .hidden {
         display: none;
       }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-form label {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
+      }
+      .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+      }
+      .contact-form textarea {
+        resize: vertical;
+        height: 150px;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form button:hover {
+        background-color: #2980b9;
+      }
+      .about-content {
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .about-content p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .about-content h3 {
+        font-weight: 500;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
@@ -220,19 +273,33 @@
         {% endif %}
         <section id="about-section" class="about-section hidden">
           <h2>About</h2>
-          <p>Semantic Search is a tool designed to help you find the information you need quickly and efficiently using advanced search algorithms.</p>
+          <div class="about-content">
+            <p>Semantic Search is a tool designed to help you find the information you need quickly and efficiently using advanced search algorithms. Our mission is to provide the most relevant and accurate results for your queries, leveraging state-of-the-art natural language processing technologies.</p>
+            <h3>Our Vision</h3>
+            <p>We envision a world where information is easily accessible and users can find precise answers to their questions without sifting through irrelevant data. Semantic Search aims to revolutionize the search experience by understanding the intent behind your queries and delivering the most pertinent results.</p>
+            <h3>Get in Touch</h3>
+            <p>If you have any questions, feedback, or suggestions, please feel free to reach out to us through the contact form below. We value your input and look forward to hearing from you!</p>
+          </div>
         </section>
         <section id="contact-section" class="contact-section hidden">
           <h2>Contact</h2>
-          <p>If you have any questions or need support, feel free to reach out to us at kumawatharsh2004@gmail.com.</p>
+          <form method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name...">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email...">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </section>
       </div>
     </main>
     <footer>
-      <div class="container">
-        <p>Made with ❤️ By <a href="https://www.linkedin.com/in/harsh-k04/" target="_blank">Harsh Kumawat</a></p>
-        <p>&copy; 2024 Semantic Search. All rights reserved.</p>
-      </div>
+      <!-- <div class="container"> -->
+        <!-- <p>Made with ❤️ By <a href="https://www.linkedin.com/in/harsh-k04/" target="_blank">Harsh Kumawat</a></p>
+        <p>&copy; 2024 Semantic Search. All rights reserved.</p> -->
+      <!-- </div> -->
     </footer>
   </body>
 </html>
